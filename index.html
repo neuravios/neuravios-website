@@ -7,7 +7,14 @@
 
 <title>Neuravios | AI Solutions & Automation</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Neuravios builds AI Chatbots, Automation, Websites and Mobile Apps.">
+<meta name="keywords" content="AI, Artificial Intelligence, Chatbot, Automation, Website Development, Mobile App">
+<meta name="author" content="Neuravios">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,14 +22,32 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 scroll-behavior:smooth;
 }
 
 body{
-background:#08111f;
+
+font-family:'Poppins',sans-serif;
+background:#07111f;
 color:white;
 overflow-x:hidden;
+
+}
+
+body::before{
+
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+
+background:
+
+radial-gradient(circle at top left,#00d4ff33,transparent 35%),
+radial-gradient(circle at bottom right,#0066ff22,transparent 35%);
+
+z-index:-2;
+
 }
 
 header{
@@ -31,30 +56,42 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 8%;
+
+padding:22px 8%;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(8,17,31,.95);
-backdrop-filter:blur(15px);
+
+background:rgba(8,17,31,.85);
+
+backdrop-filter:blur(18px);
+
 z-index:999;
+
 }
 
 .logo{
 
-font-size:30px;
-font-weight:700;
+font-size:32px;
+font-weight:800;
 color:#00d4ff;
+
+}
+
+.logo span{
+
+color:white;
 
 }
 
 nav a{
 
+text-decoration:none;
 color:white;
 margin-left:30px;
-text-decoration:none;
-transition:.3s;
 font-weight:500;
+transition:.3s;
 
 }
 
@@ -67,64 +104,171 @@ color:#00d4ff;
 .hero{
 
 height:100vh;
+
 display:flex;
-justify-content:center;
+
 align-items:center;
-flex-direction:column;
+justify-content:center;
+
 text-align:center;
-padding:20px;
 
-background:
-linear-gradient(rgba(8,17,31,.85),rgba(8,17,31,.95)),
-url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+padding:120px 10% 80px;
 
-background-size:cover;
-background-position:center;
+}
+
+.hero-content{
+
+max-width:900px;
+
+}
+
+.badge{
+
+display:inline-block;
+
+padding:10px 22px;
+
+border-radius:50px;
+
+border:1px solid rgba(0,212,255,.4);
+
+background:rgba(0,212,255,.08);
+
+color:#00d4ff;
+
+font-size:15px;
+
+margin-bottom:25px;
 
 }
 
 .hero h1{
 
-font-size:70px;
-margin-bottom:20px;
-animation:fadeUp 1s;
+font-size:68px;
+font-weight:800;
+line-height:1.15;
+
+margin-bottom:25px;
 
 }
 
-.hero span{
+.gradient{
 
-color:#00d4ff;
+background:linear-gradient(90deg,#00d4ff,#3cb8ff,#7efcff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 
 }
 
 .hero p{
 
 font-size:22px;
-color:#c9d6e2;
-max-width:900px;
-animation:fadeUp 1.5s;
+
+line-height:1.8;
+
+color:#b9c6d6;
+
+margin-bottom:40px;
+
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:18px;
+
+flex-wrap:wrap;
 
 }
 
 .btn{
 
 display:inline-block;
-margin-top:40px;
+
 padding:16px 38px;
-background:#00d4ff;
-color:white;
-text-decoration:none;
+
 border-radius:40px;
-transition:.3s;
+
 font-weight:600;
+
+text-decoration:none;
+
+transition:.35s;
 
 }
 
-.btn:hover{
+.primary{
 
-transform:translateY(-4px);
+background:linear-gradient(90deg,#00d4ff,#0099ff);
 
-background:#00a8d4;
+color:#07111f;
+
+}
+
+.primary:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 25px #00d4ff;
+
+}
+
+.secondary{
+
+border:2px solid #00d4ff;
+
+color:white;
+
+}
+
+.secondary:hover{
+
+background:#00d4ff;
+color:#07111f;
+
+}
+
+.scroll{
+
+position:absolute;
+
+bottom:30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+font-size:30px;
+
+animation:move 1.8s infinite;
+
+color:#00d4ff;
+
+}
+
+@keyframes move{
+
+0%{
+
+transform:translate(-50%,0);
+
+}
+
+50%{
+
+transform:translate(-50%,12px);
+
+}
+
+100%{
+
+transform:translate(-50%,0);
+
+}
 
 }
 
@@ -137,25 +281,46 @@ padding:100px 8%;
 .title{
 
 font-size:42px;
-margin-bottom:60px;
+
+margin-bottom:18px;
+
 text-align:center;
+
+}
+
+.subtitle{
+
+color:#b7c8d9;
+
+text-align:center;
+
+margin-bottom:70px;
+
+font-size:18px;
 
 }
 
 .cards{
 
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:28px;
 
 }
 
 .card{
 
-background:#13233d;
+background:#101d31;
+
 padding:35px;
-border-radius:18px;
-transition:.4s;
+
+border-radius:20px;
+
+transition:.35s;
+
+border:1px solid transparent;
 
 }
 
@@ -163,126 +328,43 @@ transition:.4s;
 
 transform:translateY(-10px);
 
+border-color:#00d4ff;
+
 }
 
 .card h3{
 
+font-size:24px;
+
 margin-bottom:15px;
-color:#00d4ff;
 
 }
 
 .card p{
 
+color:#b6c3d5;
+
 line-height:1.8;
-color:#bfc8d4;
 
 }
 
-.about{
+@media(max-width:900px){
 
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+.hero h1{
 
-}
-
-.about img{
-
-width:100%;
-border-radius:20px;
+font-size:46px;
 
 }
 
-.contact{
+.hero p{
 
-text-align:center;
-
-}
-
-.contact h2{
-
-font-size:40px;
-
-}
-
-.contact p{
-
-margin:25px 0;
-
-}
-
-footer{
-
-background:#06101c;
-padding:30px;
-text-align:center;
-
-}
-
-.whatsapp{
-
-position:fixed;
-right:20px;
-bottom:20px;
-
-background:#25D366;
-color:white;
-width:65px;
-height:65px;
-display:flex;
-justify-content:center;
-align-items:center;
-border-radius:50%;
-font-size:30px;
-text-decoration:none;
-
-box-shadow:0 0 20px rgba(0,0,0,.3);
-
-}
-
-@keyframes fadeUp{
-
-from{
-
-opacity:0;
-transform:translateY(40px);
-
-}
-
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-@media(max-width:768px){
-
-header{
-
-padding:20px;
+font-size:18px;
 
 }
 
 nav{
 
 display:none;
-
-}
-
-.hero h1{
-
-font-size:42px;
-
-}
-
-.about{
-
-grid-template-columns:1fr;
 
 }
 
@@ -296,7 +378,11 @@ grid-template-columns:1fr;
 
 <header>
 
-<div class="logo">Neuravios</div>
+<div class="logo">
+
+Neura<span>vios</span>
+
+</div>
 
 <nav>
 
@@ -312,85 +398,303 @@ grid-template-columns:1fr;
 
 <section class="hero">
 
-<h1>Build Smarter with <span>AI</span></h1>
+<div class="hero-content">
+
+<div class="badge">
+
+🚀 AI Powered Company
+
+</div>
+
+<h1>
+
+Build Smarter with
+
+<span class="gradient">
+
+Artificial Intelligence
+
+</span>
+
+</h1>
 
 <p>
 
-AI Solutions • Automation • Web Development • Mobile Apps
+AI Chatbots • Automation • Websites • Mobile Apps • Custom Software
 
 </p>
 
-<a href="#services" class="btn">
+<div class="buttons">
 
-Get Started
+<a href="#services" class="btn primary">
+
+Explore Services
 
 </a>
 
-</section><!-- SERVICES -->
+<a href="#contact" class="btn secondary">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+<div class="scroll">
+
+↓
+
+</div>
+
+</section>
+
+<!-- PART 2 CONTINUES HERE --><!-- ==========================
+SERVICES
+=========================== -->
 
 <section id="services">
 
 <h2 class="title">Our Services</h2>
 
+<p class="subtitle">
+
+Powering Businesses with Artificial Intelligence & Digital Innovation
+
+</p>
+
 <div class="cards">
 
 <div class="card">
+
 <h3>🤖 AI Chatbots</h3>
+
 <p>
-Custom AI assistants for businesses, customer support and automation.
+
+Custom AI assistants for websites, customer support and business automation.
+
 </p>
+
 </div>
 
 <div class="card">
-<h3>⚙️ Automation</h3>
+
+<h3>⚙️ AI Automation</h3>
+
 <p>
-Business workflow automation using modern AI technologies.
+
+Automate repetitive business tasks with intelligent AI workflows.
+
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>🌐 Website Development</h3>
+
 <p>
-Premium responsive websites with modern UI and high performance.
+
+Premium responsive websites built for speed, SEO and modern design.
+
 </p>
+
 </div>
 
 <div class="card">
-<h3>📱 Mobile Apps</h3>
+
+<h3>📱 Mobile App Development</h3>
+
 <p>
-Android & iOS applications with beautiful design and fast performance.
+
+Beautiful Android & iOS applications with scalable architecture.
+
 </p>
+
+</div>
+
+<div class="card">
+
+<h3>☁️ SaaS Development</h3>
+
+<p>
+
+Build secure cloud-based software products ready for global users.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📈 AI Consulting</h3>
+
+<p>
+
+Transform your business with AI strategy, automation and digital solutions.
+
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- ==========================
+WHY CHOOSE US
+=========================== -->
 
-<section id="about">
+<section>
 
-<div class="about">
+<h2 class="title">
 
-<div>
+Why Choose Neuravios
 
-<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=80">
+</h2>
+
+<p class="subtitle">
+
+Technology • Innovation • Growth
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🚀 Fast Delivery</h3>
+
+<p>
+
+Agile development process with quick delivery and continuous improvements.
+
+</p>
 
 </div>
 
-<div>
+<div class="card">
 
-<h2 class="title" style="text-align:left;margin-bottom:20px;">
+<h3>🔒 Secure Solutions</h3>
+
+<p>
+
+Security-first architecture ensuring reliability and data protection.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💎 Premium UI</h3>
+
+<p>
+
+Beautiful interfaces designed for world-class user experience.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Business Growth</h3>
+
+<p>
+
+Technology that helps startups and enterprises scale faster.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🧠 AI First</h3>
+
+<p>
+
+Every product is designed around Artificial Intelligence and Automation.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌎 Global Ready</h3>
+
+<p>
+
+Scalable solutions built for businesses worldwide.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+PART 3 STARTS HERE
+=========================== -->
+  <!-- ==========================
+ABOUT US
+=========================== -->
+
+<section id="about">
+
+<h2 class="title">
 
 About Neuravios
 
 </h2>
 
-<p style="line-height:2;color:#cfd8e3;font-size:18px;">
+<p class="subtitle">
 
-Neuravios is an AI-powered technology company focused on building innovative software, intelligent automation, modern websites, and mobile applications.
+Building the Future with Artificial Intelligence
 
-Our mission is to help businesses grow faster through cutting-edge Artificial Intelligence solutions and digital transformation.
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🚀 Our Mission</h3>
+
+<p>
+
+To empower businesses with Artificial Intelligence,
+Automation, Websites and Mobile Applications.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌍 Our Vision</h3>
+
+<p>
+
+To become a globally trusted AI technology company
+creating innovative digital products.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💡 Innovation</h3>
+
+<p>
+
+We focus on modern technologies that solve
+real business problems.
 
 </p>
 
@@ -400,31 +704,270 @@ Our mission is to help businesses grow faster through cutting-edge Artificial In
 
 </section>
 
-  <!-- CONTACT -->
+<!-- ==========================
+STATISTICS
+=========================== -->
 
-<section id="contact" class="contact">
+<section>
 
-<h2>Let's Build Something Amazing</h2>
+<h2 class="title">
 
-<p>Email: contact@neuravios.com</p>
+Neuravios In Numbers
 
-<p>WhatsApp: +91 9852402481</p>
+</h2>
 
-<a href="https://wa.me/919852402481" class="btn">Chat on WhatsApp</a>
+<p class="subtitle">
+
+Growing Every Day
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>10+</h3>
+
+<p>
+
+AI Solutions
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>25+</h3>
+
+<p>
+
+Projects Planned
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>100%</h3>
+
+<p>
+
+Client Focus
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>24×7</h3>
+
+<p>
+
+Support
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
+<!-- ==========================
+CONTACT
+=========================== -->
+
+<section id="contact">
+
+<h2 class="title">
+
+Let's Build Something Amazing
+
+</h2>
+
+<p class="subtitle">
+
+Start your AI journey with Neuravios today.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📧 Email</h3>
+
+<p>
+
+contact@neuravios.com
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📱 WhatsApp</h3>
+
+<p>
+
++91 9852402481
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌐 Website</h3>
+
+<p>
+
+https://neuravios.com
+
+</p>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div style="text-align:center;">
+
+<a href="https://wa.me/919852402481"
+
+class="btn primary">
+
+Chat on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ==========================
+PART 4 STARTS HERE
+=========================== -->
+  <!-- ==========================
+FOOTER
+=========================== -->
+
 <footer>
 
-<p>© 2026 Neuravios. All Rights Reserved.</p>
+<div style="max-width:1200px;margin:auto;text-align:center;">
+
+<h2 style="color:#00d4ff;margin-bottom:15px;">
+
+Neuravios
+
+</h2>
+
+<p style="color:#b8c5d6;max-width:700px;margin:auto;line-height:1.8;">
+
+Building intelligent AI solutions, automation systems,
+websites and mobile applications for startups,
+businesses and enterprises.
+
+</p>
+
+<div style="margin:30px 0;">
+
+<a href="#services" style="color:white;margin:0 15px;text-decoration:none;">Services</a>
+
+<a href="#about" style="color:white;margin:0 15px;text-decoration:none;">About</a>
+
+<a href="#contact" style="color:white;margin:0 15px;text-decoration:none;">Contact</a>
+
+</div>
+
+<hr style="border:none;height:1px;background:#1b2f4f;margin:25px 0;">
+
+<p style="color:#8ea5c0;">
+
+© 2026 Neuravios. All Rights Reserved.
+
+</p>
+
+</div>
 
 </footer>
 
-<a href="https://wa.me/919852402481" class="whatsapp">
+<!-- ==========================
+FLOATING WHATSAPP
+=========================== -->
+
+<a href="https://wa.me/919852402481"
+
+class="whatsapp"
+
+target="_blank"
+
+title="Chat with us">
 
 💬
 
 </a>
+
+<!-- ==========================
+JAVASCRIPT
+=========================== -->
+
+<script>
+
+// Navbar shadow on scroll
+
+window.addEventListener("scroll",function(){
+
+const header=document.querySelector("header");
+
+if(window.scrollY>40){
+
+header.style.boxShadow="0 8px 25px rgba(0,0,0,.35)";
+
+}
+
+else{
+
+header.style.boxShadow="none";
+
+}
+
+});
+
+// Fade animation
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.animate(
+
+[
+{opacity:0,transform:"translateY(40px)"},
+{opacity:1,transform:"translateY(0px)"}
+],
+
+{
+duration:700,
+fill:"forwards"
+});
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card,.title,.subtitle").forEach(el=>observer.observe(el));
+
+</script>
 
 </body>
 
