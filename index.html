@@ -1,400 +1,527 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Neuravios provides AI solutions, business automation, AI chatbots, website development, mobile apps and custom software solutions.">
 
     <title>Neuravios | AI Solutions & Automation</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<header class="navbar">
 
-    <div class="logo">
-        Neuravios
-    </div>
+    <!-- =========================
+         NAVBAR
+    ========================== -->
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
-        ☰
-    </button>
+    <header class="navbar">
 
-    <nav id="navMenu">
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-</header>
-
-<section class="hero">
-
-    <span class="badge">
-        🚀 AI Powered Company
-    </span>
-
-    <h1>
-
-        Build Smarter with
-
-        <span>Artificial Intelligence</span>
-
-    </h1>
-
-    <p>
-
-        AI Chatbots • Automation • Websites • Mobile Apps • Custom Software
-
-    </p>
-
-    <div class="buttons">
-
-        <a href="#services" class="btn">
-            Explore Services
+        <a href="#" class="logo">
+            Neuravios
         </a>
 
-        <a href="#contact" class="btn outline">
-            Contact Us
-        </a>
-
-    </div>
-
-</section> <!-- =========================
-SERVICES
-========================= -->
-
-<section id="services">
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navMenu">
+            ☰
+        </button>
 
-<h2 class="title">
-Our Services
-</h2>
+        <nav id="navMenu">
 
-<p class="subtitle">
-Powerful AI & Digital Solutions for Modern Businesses
-</p>
+            <a href="#">Home</a>
 
-<div class="cards">
+            <a href="#services">Services</a>
 
-<div class="card">
-<div class="icon">🤖</div>
+            <a href="#about">About</a>
 
-<h3>AI Chatbots</h3>
+            <a href="#contact">Contact</a>
 
-<p>
-Custom AI Chatbots for websites,
-WhatsApp and customer support.
-</p>
-</div>
+        </nav>
 
-<div class="card">
-<div class="icon">🌐</div>
+    </header>
 
-<h3>Website Development</h3>
 
-<p>
-Modern, responsive and SEO optimized
-business websites.
-</p>
-</div>
+    <main>
 
-<div class="card">
-<div class="icon">📱</div>
+        <!-- =========================
+             HERO
+        ========================== -->
 
-<h3>Mobile Apps</h3>
+        <section class="hero" id="home">
 
-<p>
-Android & iOS apps with premium UI
-and smooth performance.
-</p>
-</div>
-<div class="card">
-    <div class="icon">⚙️</div>
-    <h3>Business Automation</h3>
-    <p>
-        Automate repetitive business processes and workflows to save time and improve efficiency.
-    </p>
-</div>
+            <span class="badge">
+                🚀 AI Powered Company
+            </span>
 
-<div class="card">
-    <div class="icon">💻</div>
-    <h3>Custom Software</h3>
-    <p>
-        Tailored software solutions designed to meet your unique business requirements.
-    </p>
-</div>
+            <h1>
+                Build Smarter with
+                <span>Artificial Intelligence</span>
+            </h1>
 
-<div class="card">
-    <div class="icon">🧠</div>
-    <h3>AI Integration</h3>
-    <p>
-        Integrate powerful AI technologies into your existing systems, applications and workflows.
-    </p>
-</div>
-</div>
+            <p>
+                AI Chatbots • Automation • Websites • Mobile Apps • Custom Software
+            </p>
 
-</section>
-<!-- =========================
-ABOUT
-========================= -->
+            <div class="buttons">
 
-<section id="about" class="about">
+                <a href="#services" class="btn">
+                    Explore Services
+                </a>
 
-<div>
+                <a href="#contact" class="btn outline">
+                    Contact Us
+                </a>
 
-<h2 class="title">
-Why Neuravios?
-</h2>
+            </div>
 
-<p class="subtitle">
-We build intelligent digital solutions that help businesses automate work, increase productivity and grow faster with AI.
-</p>
+        </section>
 
-<p class="about-text">
-Our mission is to make Artificial Intelligence simple, affordable and useful for every business.
-</p>
 
-<a href="#contact" class="btn">
-Let's Work Together
-</a>
+        <!-- =========================
+             SERVICES
+        ========================== -->
 
-</div>
+        <section id="services">
 
-<div class="about-image">
+            <h2 class="title">
+                Our Services
+            </h2>
 
-<div class="about-box">
+            <p class="subtitle">
+                Powerful AI & Digital Solutions for Modern Businesses
+            </p>
 
-<h3>🚀 Innovation</h3>
+            <div class="cards">
 
-<p>Modern AI solutions built for the future.</p>
+                <article class="card">
 
-</div>
+                    <div class="icon">
+                        🤖
+                    </div>
 
-<div class="about-box">
+                    <h3>
+                        AI Chatbots
+                    </h3>
 
-<h3>⚡ Fast Delivery</h3>
+                    <p>
+                        Custom AI chatbots for websites, WhatsApp and customer support.
+                    </p>
 
-<p>Quick development with premium quality.</p>
+                </article>
 
-</div>
 
-<div class="about-box">
+                <article class="card">
 
-<h3>💎 Premium Quality</h3>
+                    <div class="icon">
+                        🌐
+                    </div>
 
-<p>Professional UI, scalable architecture and clean code.</p>
+                    <h3>
+                        Website Development
+                    </h3>
 
-</div>
+                    <p>
+                        Modern, responsive and SEO-optimized business websites.
+                    </p>
 
-</div>
+                </article>
 
-</section>
-<!-- ================= PORTFOLIO ================= -->
 
-<section id="portfolio">
+                <article class="card">
 
-<h2 class="title">Our Recent Projects</h2>
+                    <div class="icon">
+                        📱
+                    </div>
 
-<p class="subtitle">
-Some of our latest AI & Digital solutions.
-</p>
+                    <h3>
+                        Mobile Apps
+                    </h3>
 
-<div class="portfolio-grid">
+                    <p>
+                        Android and iOS applications with premium UI and smooth performance.
+                    </p>
 
-<div class="project-card">
+                </article>
 
-<div class="project-image">🌐</div>
 
-<h3>Business Website</h3>
+                <article class="card">
 
-<p>
-Modern responsive company website with premium UI.
-</p>
+                    <div class="icon">
+                        ⚙️
+                    </div>
 
-</div>
+                    <h3>
+                        Business Automation
+                    </h3>
 
-<div class="project-card">
+                    <p>
+                        Automate repetitive business processes and workflows to save time and improve efficiency.
+                    </p>
 
-<div class="project-image">🤖</div>
+                </article>
 
-<h3>AI Chatbot</h3>
 
-<p>
-Smart AI chatbot for websites and customer support.
-</p>
+                <article class="card">
 
-</div>
+                    <div class="icon">
+                        💻
+                    </div>
 
-<div class="project-card">
+                    <h3>
+                        Custom Software
+                    </h3>
 
-<div class="project-image">📱</div>
+                    <p>
+                        Tailored software solutions designed to meet your unique business requirements.
+                    </p>
 
-<h3>Mobile App</h3>
+                </article>
 
-<p>
-Android & iOS applications with modern design.
-</p>
 
-</div>
+                <article class="card">
 
-<div class="project-card">
+                    <div class="icon">
+                        🧠
+                    </div>
 
-<div class="project-image">⚙️</div>
+                    <h3>
+                        AI Integration
+                    </h3>
 
-<h3>Business Automation</h3>
+                    <p>
+                        Integrate powerful AI technologies into your existing systems, applications and workflows.
+                    </p>
 
-<p>
-Automation tools to improve business productivity.
-</p>
+                </article>
 
-</div>
+            </div>
 
-</div>
+        </section>
 
-</section>
-<!-- ================= TESTIMONIALS ================= -->
 
-<section id="testimonials">
+        <!-- =========================
+             ABOUT
+        ========================== -->
 
-<h2 class="title">What Our Clients Say</h2>
+        <section id="about" class="about">
 
-<p class="subtitle">
-Trusted by startups, businesses and entrepreneurs.
-</p>
+            <div class="about-content">
 
-<div class="testimonial-grid">
+                <h2 class="title">
+                    Why Neuravios?
+                </h2>
 
-<div class="testimonial-card">
+                <p class="subtitle">
+                    We build intelligent digital solutions that help businesses automate work,
+                    increase productivity and grow faster with AI.
+                </p>
 
-<p>
-"Neuravios transformed our business with a modern website and AI automation. Highly recommended!"
-</p>
+                <p class="about-text">
+                    Our mission is to make Artificial Intelligence simple, affordable and useful
+                    for every business.
+                </p>
 
-<h4>★★★★★</h4>
+                <a href="#contact" class="btn">
+                    Let's Work Together
+                </a>
 
-<h3>Rahul Sharma</h3>
+            </div>
 
-<span>Business Owner</span>
 
-</div>
+            <div class="about-image">
 
-<div class="testimonial-card">
+                <div class="about-box">
 
-<p>
-"The chatbot developed by Neuravios improved our customer support and response time."
-</p>
+                    <h3>
+                        🚀 Innovation
+                    </h3>
 
-<h4>★★★★★</h4>
+                    <p>
+                        Modern AI solutions built for the future.
+                    </p>
 
-<h3>Priya Singh</h3>
+                </div>
 
-<span>Startup Founder</span>
 
-</div>
+                <div class="about-box">
 
-<div class="testimonial-card">
+                    <h3>
+                        ⚡ Fast Delivery
+                    </h3>
 
-<p>
-"Professional team, premium design and timely delivery. Excellent experience!"
-</p>
+                    <p>
+                        Quick development with premium quality.
+                    </p>
 
-<h4>★★★★★</h4>
+                </div>
 
-<h3>Amit Kumar</h3>
 
-<span>Entrepreneur</span>
+                <div class="about-box">
 
-</div>
+                    <h3>
+                        💎 Premium Quality
+                    </h3>
 
-</div>
+                    <p>
+                        Professional UI, scalable architecture and clean code.
+                    </p>
 
-</section>
-<!-- =================== FAQ =================== -->
+                </div>
 
-<section id="faq" class="faq">
+            </div>
 
-    <h2 class="title">Frequently Asked Questions</h2>
+        </section>
 
-    <p class="subtitle">
-        Everything you need to know about our services.
-    </p>
 
-    <div class="faq-box">
+        <!-- =========================
+             PORTFOLIO
+        ========================== -->
 
-        <div class="faq-item">
-            <h3>❓ How long does a website take?</h3>
-            <p>Most business websites are completed within 5–10 working days.</p>
-        </div>
+        <section id="portfolio">
 
-        <div class="faq-item">
-            <h3>💰 What is the starting price?</h3>
-            <p>Pricing depends on project requirements and features.</p>
-        </div>
+            <h2 class="title">
+                Solutions We Build
+            </h2>
 
-        <div class="faq-item">
-            <h3>🤖 Do you build AI Chatbots?</h3>
-            <p>Yes, we build AI chatbots for websites, WhatsApp and customer support.</p>
-        </div>
+            <p class="subtitle">
+                Explore the AI and digital solutions we can build for your business.
+            </p>
 
-        <div class="faq-item">
-            <h3>📱 Are websites mobile friendly?</h3>
-            <p>Yes. Every website is fully responsive for mobile, tablet and desktop.</p>
-        </div>
+            <div class="portfolio-grid">
 
-    </div>
+                <article class="project-card">
 
-</section>
-<!-- ================= CONTACT ================= -->
+                    <div class="project-image">
+                        🌐
+                    </div>
 
-<section id="contact" class="contact">
+                    <h3>
+                        Business Website
+                    </h3>
 
-<h2 class="title">Let's Build Something Amazing</h2>
+                    <p>
+                        Modern responsive company website with premium UI.
+                    </p>
 
-<p class="subtitle">
-Have an AI project or business idea? Let's discuss it.
-</p>
+                </article>
 
-<div class="contact-box">
 
-<h3>Neuravios</h3>
+                <article class="project-card">
 
-<p>AI Solutions & Automation Company</p>
+                    <div class="project-image">
+                        🤖
+                    </div>
 
+                    <h3>
+                        AI Chatbot
+                    </h3>
 
-<p>📱 +91 98524 02481</p>
+                    <p>
+                        Smart AI chatbot solutions for websites and customer support.
+                    </p>
 
-<p>🌍 www.neuravios.com</p>
+                </article>
 
-<div class="contact-buttons">
 
+                <article class="project-card">
 
-<a href="https://wa.me/919852402481?text=Hi%20Neuravios%2C%20I%20would%20like%20to%20discuss%20a%20project."
-   target="_blank"
-   class="btn outline">
-   WhatsApp
-</a>
+                    <div class="project-image">
+                        📱
+                    </div>
 
-</div>
+                    <h3>
+                        Mobile App
+                    </h3>
 
-</div>
+                    <p>
+                        Android and iOS applications with modern design.
+                    </p>
 
-</section>
+                </article>
 
-<footer>
 
-<p>
-© 2026 Neuravios. All Rights Reserved.
-</p>
+                <article class="project-card">
 
-</footer>
-<script src="script.js"></script>
+                    <div class="project-image">
+                        ⚙️
+                    </div>
+
+                    <h3>
+                        Business Automation
+                    </h3>
+
+                    <p>
+                        Automation tools designed to improve business productivity.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FAQ
+        ========================== -->
+
+        <section id="faq" class="faq">
+
+            <h2 class="title">
+                Frequently Asked Questions
+            </h2>
+
+            <p class="subtitle">
+                Everything you need to know about our services.
+            </p>
+
+            <div class="faq-box">
+
+                <article class="faq-item">
+
+                    <h3>
+                        ❓ How long does a website take?
+                    </h3>
+
+                    <p>
+                        Most business websites are completed within 5–10 working days,
+                        depending on project requirements.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-item">
+
+                    <h3>
+                        💰 What is the starting price?
+                    </h3>
+
+                    <p>
+                        Pricing depends on project requirements, features and complexity.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-item">
+
+                    <h3>
+                        🤖 Do you build AI Chatbots?
+                    </h3>
+
+                    <p>
+                        Yes. We build AI chatbots for websites, customer support and
+                        business workflows.
+                    </p>
+
+                </article>
+
+
+                <article class="faq-item">
+
+                    <h3>
+                        📱 Are websites mobile friendly?
+                    </h3>
+
+                    <p>
+                        Yes. Every website is designed to be responsive across mobile,
+                        tablet and desktop devices.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="contact">
+
+            <h2 class="title">
+                Let's Build Something Amazing
+            </h2>
+
+            <p class="subtitle">
+                Have an AI project or business idea? Let's discuss it.
+            </p>
+
+            <div class="contact-box">
+
+                <h3>
+                    Neuravios
+                </h3>
+
+                <p>
+                    AI Solutions & Automation Company
+                </p>
+
+                <p>
+                    📱 +91 98524 02481
+                </p>
+
+                <p>
+                    🌍 www.neuravios.com
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a
+                        href="https://wa.me/919852402481?text=Hi%20Neuravios%2C%20I%20would%20like%20to%20discuss%20a%20project."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn outline">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Neuravios. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
