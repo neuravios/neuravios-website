@@ -1,0 +1,695 @@
+/* =========================
+   NEURAVIOS V5
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:#fff;
+overflow-x:hidden;
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(5,8,22,.85);
+backdrop-filter:blur(18px);
+z-index:999;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+color:#00c6ff;
+}
+
+nav{
+display:flex;
+gap:35px;
+}
+
+nav a{
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00c6ff;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:140px 20px 60px;
+}
+
+.badge{
+padding:12px 28px;
+border:2px solid #00c6ff;
+border-radius:50px;
+color:#00c6ff;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:72px;
+font-weight:800;
+line-height:1.15;
+max-width:950px;
+}
+
+.hero h1 span{
+display:block;
+color:#00c6ff;
+}
+
+.hero p{
+margin-top:25px;
+font-size:22px;
+color:#b9c4d8;
+line-height:1.8;
+max-width:900px;
+}
+
+.buttons{
+margin-top:40px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.btn{
+padding:16px 40px;
+border-radius:50px;
+background:#00c6ff;
+color:#fff;
+font-weight:700;
+transition:.35s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.outline{
+background:transparent;
+border:2px solid #00c6ff;
+}
+/* =========================
+   SERVICES SECTION
+========================= */
+
+section{
+padding:100px 8%;
+}
+
+.title{
+font-size:48px;
+text-align:center;
+margin-bottom:15px;
+font-weight:800;
+}
+
+.subtitle{
+text-align:center;
+color:#9fb2c9;
+font-size:20px;
+margin-bottom:60px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border-radius:22px;
+padding:35px;
+transition:.35s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#00c6ff;
+box-shadow:0 0 35px rgba(0,198,255,.25);
+}
+
+.card h3{
+margin:20px 0 15px;
+font-size:24px;
+}
+
+.card p{
+color:#b8c5d6;
+line-height:1.8;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about p{
+color:#b8c5d6;
+line-height:1.9;
+font-size:18px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box{
+max-width:700px;
+margin:auto;
+background:rgba(255,255,255,.05);
+padding:40px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:16px;
+margin-bottom:18px;
+background:#111827;
+border:none;
+border-radius:12px;
+color:white;
+font-size:16px;
+}
+
+.contact-box button{
+width:100%;
+padding:16px;
+background:#00c6ff;
+border:none;
+border-radius:12px;
+color:white;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+}
+
+footer{
+padding:35px;
+text-align:center;
+color:#8ca2bc;
+border-top:1px solid rgba(255,255,255,.08);
+margin-top:80px;
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:18px;
+padding:20px;
+}
+
+.logo{
+font-size:42px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+}
+
+.hero{
+padding-top:70px;
+}
+
+.hero h1{
+font-size:64px;
+line-height:1.1;
+}
+
+.hero h1 span{
+font-size:64px;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.title{
+font-size:38px;
+}
+
+.subtitle{
+font-size:18px;
+}
+
+.cards{
+grid-template-columns:1fr;
+}
+
+}
+
+@media (max-width:420px){
+
+.logo{
+font-size:34px;
+}
+
+nav a{
+font-size:18px;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.hero h1 span{
+font-size:46px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+section{
+padding:70px 24px;
+}
+
+.title{
+font-size:32px;
+}
+
+.subtitle{
+font-size:16px;
+}
+
+.contact-box{
+padding:25px;
+}
+
+}
+/* =========================
+ABOUT SECTION
+========================= */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about-text{
+font-size:18px;
+line-height:1.8;
+color:#b8c1d9;
+margin:25px 0 35px;
+}
+
+.about-image{
+display:grid;
+gap:25px;
+}
+
+.about-box{
+background:#141925;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+transition:.35s;
+}
+
+.about-box:hover{
+transform:translateY(-8px);
+border-color:#00c6ff;
+box-shadow:0 20px 50px rgba(0,198,255,.18);
+}
+
+.about-box h3{
+font-size:24px;
+margin-bottom:12px;
+color:#fff;
+}
+
+.about-box p{
+color:#aab3c8;
+line-height:1.7;
+}
+/* =========================
+ABOUT RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+gap:40px;
+}
+
+.about-box{
+padding:25px;
+}
+
+.about-box h3{
+font-size:22px;
+}
+
+.about-text{
+font-size:17px;
+}
+
+}
+
+@media(max-width:420px){
+
+.about{
+gap:30px;
+}
+
+.about-box{
+padding:20px;
+border-radius:18px;
+}
+
+.about-box h3{
+font-size:20px;
+}
+
+.about-box p{
+font-size:15px;
+line-height:1.6;
+}
+
+.about-text{
+font-size:16px;
+}
+
+}
+/* ================= CONTACT ================= */
+
+.contact{
+padding:100px 8%;
+text-align:center;
+}
+
+.contact-box{
+max-width:700px;
+margin:40px auto;
+padding:45px;
+background:#161b29;
+border:1px solid rgba(255,255,255,.08);
+border-radius:28px;
+}
+
+.contact-box h3{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.contact-box p{
+color:#b9bfd3;
+font-size:20px;
+line-height:1.8;
+margin-bottom:12px;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:35px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+padding:40px;
+text-align:center;
+color:#8ca2bc;
+border-top:1px solid rgba(255,255,255,.08);
+margin-top:80px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.contact{
+padding:80px 20px;
+}
+
+.contact-box{
+padding:30px;
+}
+
+.contact-box h3{
+font-size:28px;
+}
+
+.contact-box p{
+font-size:18px;
+}
+
+.contact-buttons{
+flex-direction:column;
+align-items:center;
+}
+
+.contact-buttons .btn{
+width:100%;
+max-width:320px;
+}
+
+footer{
+padding:30px 20px;
+font-size:14px;
+}
+
+}
+/* ================= PORTFOLIO ================= */
+
+#portfolio{
+padding:100px 8%;
+}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.project-card{
+background:#161b29;
+border:1px solid rgba(255,255,255,.08);
+border-radius:25px;
+padding:35px;
+transition:.35s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+border-color:#00c6ff;
+box-shadow:0 20px 50px rgba(0,198,255,.18);
+}
+
+.project-image{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.project-card h3{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.project-card p{
+color:#b9bfd3;
+font-size:18px;
+line-height:1.7;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+#portfolio{
+padding:80px 20px;
+}
+
+.project-card{
+padding:28px;
+}
+
+.project-card h3{
+font-size:26px;
+}
+
+.project-card p{
+font-size:17px;
+}
+
+}
+/* ===============================
+   TESTIMONIALS
+================================= */
+
+#testimonials{
+    padding:100px 8%;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.testimonial-card{
+    background:#171b29;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+    transition:.35s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    border-color:#00c6ff;
+    box-shadow:0 20px 40px rgba(0,198,255,.15);
+}
+
+.testimonial-card p{
+    color:#bfc6d8;
+    line-height:1.8;
+    font-size:17px;
+    margin-bottom:25px;
+}
+
+.client{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#00c6ff,#0072ff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+}
+
+.client h4{
+    font-size:18px;
+    margin-bottom:4px;
+}
+
+.client span{
+    color:#8ca2bc;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .testimonial-grid{
+        grid-template-columns:1fr;
+    }
+
+    .testimonial-card{
+        padding:25px;
+    }
+
+}
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq{
+    padding:80px 8%;
+}
+
+.faq-box{
+    max-width:900px;
+    margin:auto;
+}
+
+.faq-item{
+    background:#151924;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:24px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.faq-item:hover{
+    transform:translateY(-5px);
+    border-color:#18c5ff;
+}
+
+.faq-item h3{
+    color:#fff;
+    margin-bottom:10px;
+    font-size:22px;
+}
+
+.faq-item p{
+    color:#b7bfd3;
+    line-height:1.8;
+}
