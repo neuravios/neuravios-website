@@ -693,3 +693,115 @@ font-size:17px;
     color:#b7bfd3;
     line-height:1.8;
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+========================= */
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Mobile Navbar */
+.navbar {
+    position: relative;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#navMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    flex-direction: column;
+    background: #151924;
+    padding: 20px;
+    border-radius: 12px;
+    z-index: 1000;
+    gap: 15px;
+}
+
+#navMenu.active {
+    display: flex;
+}
+
+#navMenu a {
+    display: block;
+    text-align: center;
+}
+
+    /* Sections */
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Service Cards */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    /* Contact */
+    .contact-box {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    /* Buttons */
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Headings */
+    h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+/* =========================
+   MOBILE HAMBURGER MENU
+========================= */
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #18c5ff;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block !important;
+        position: relative;
+        z-index: 9999;
+        color: #18c5ff;
+        font-size: 32px;
+    }
+}
