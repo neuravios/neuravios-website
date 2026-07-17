@@ -819,3 +819,55 @@ font-size:17px;
         line-height: 1.05;
     }
 }
+
+/* =========================
+   MOBILE SERVICES POLISH
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Services section spacing */
+    #services {
+        padding: 70px 20px;
+    }
+
+    /* Services cards container */
+    .services-grid {
+        gap: 24px;
+    }
+
+    /* All service cards */
+    .service-card {
+        padding: 32px 28px;
+        margin: 0;
+        border: 1px solid rgba(24, 197, 255, 0.25);
+        border-radius: 24px;
+        box-shadow: none;
+    }
+
+    /* Card hover/touch effect */
+    .service-card:hover {
+        border-color: #18c5ff;
+        box-shadow: 0 10px 30px rgba(24, 197, 255, 0.12);
+        transform: translateY(-3px);
+    }
+
+    /* Service title */
+    .service-card h3 {
+        font-size: 27px;
+        line-height: 1.25;
+        margin-bottom: 18px;
+    }
+
+    /* Service description */
+    .service-card p {
+        font-size: 19px;
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+
+    /* Reduce excessive gap before About section */
+    #about {
+        padding-top: 70px;
+    }
+}
